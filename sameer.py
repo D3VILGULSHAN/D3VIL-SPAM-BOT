@@ -1531,11 +1531,128 @@ async def help(e):
     if e.sender_id in SMEX_USERS:
        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.join\n.pjoin\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
-
+#-------------------Ustad-Op---------------------------------
         
+from telethon.errors import (
+    ChannelInvalidError,
+    ChannelPrivateError,
+    ChannelPublicGroupNaError,
+)
+from telethon.tl import functions
+from telethon.tl.functions.channels import GetFullChannelRequest
+from telethon.tl.functions.messages import GetFullChatRequest
 
+from . import *
+
+async def get_chatinfo(event):
+    chat = event.pattern_match.group(1)
+    chat_info = None
+    if chat:
+        try:
+            chat = int(chat)
+        except ValueError:
+            pass
+    if not chat:
+        if event.reply_to_msg_id:
+            replied_msg = await event.get_reply_message()
+            if replied_msg.fwd_from and replied_msg.fwd_from.channel_id is not None:
+                chat = replied_msg.fwd_from.channel_id
+        else:
+            chat = event.chat_id
+    try:
+        chat_info = await event.client(GetFullChatRequest(chat))
+    except:
+        try:
+            chat_info = await event.client(GetFullChannelRequest(chat))
+        except ChannelInvalidError:
+            await event.reply("`Invalid channel/group`")
+            return None
+        except ChannelPrivateError:
+            await event.reply(
+                "`This is a private channel/group or I am banned from there`"
+            )
+            return None
+        except ChannelPublicGroupNaError:
+            await event.reply("`Channel or supergroup doesn't exist`")
+            return None
+        except (TypeError, ValueError):
+            await event.reply("`Invalid channel/group`")
+            return None
+    return chat_info
+
+
+def user_full_name(user):
+    names = [user.first_name, user.last_name]
+    names = [i for i in list(names) if i]
+    full_name = " ".join(names)
+    return full_name
+
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+async def get_users(event):
+    sender = await event.get_sender()
+    me = await event.client.get_me()
+    if not sender.id == me.id:
+        hunter = await event.edit("`processing...`")
+    else:
+        hunter = await event.edit("`processing...`")
+    he_ll = event.pattern_match.group(1)
+    kraken = await get_chatinfo(event)
+    chat = await event.get_chat()
+    if event.is_private:
+        return await hunter.edit("`Sorry, Cant add users here`")
+    s = 0
+    f = 0
+    error = "None"
+
+    await hunter.edit("**INVITING USERS !!**")
+    async for user in event.client.iter_participants(kraken.full_chat.id):
+        try:
+            if error.startswith("Too"):
+                return await hunter.edit(
+                    f"**INVITING FINISHED !**\n\n**Error :** \n`{error}`\n\n**Invited :**  `{s}` users. \n**Failed to Invite :** `{f}` users."
+                )
+            await event.client(
+                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
+            )
+            s = s + 1
+            await hunter.edit(
+                f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+            )
+        except Exception as e:
+            error = str(e)
+            f = f + 1
+    return await hunter.edit(
+        f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
+    )
     
-        
+ 
+
+
+       
 text = """
 
 💥💥CONGRATULATIONS UR DEADLY SPAM BOT IS READY💥💥💥
