@@ -1542,7 +1542,6 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
 
-from . import *
 
 async def get_chatinfo(event):
     chat = event.pattern_match.group(1)
