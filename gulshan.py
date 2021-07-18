@@ -1538,12 +1538,12 @@ async def help(e):
         
 text = """
 
-💥💥CONGRATULATIONS UR DEADLY SPAM BOT IS READY💥💥💥
-💥💥💥💥💥💥 BY OP SAMEER 💥💥💥💥💥💥"""
+💥💥CONGRATULATIONS UR D3vil SPAM BOT IS READY💥💥💥
+💥💥💥💥💥💥 BY @official_sameer 💥💥💥💥💥💥"""
 
 print(text)
 print("")
-print("🙏🔥🔥SMEX! DEADLY MULTI SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
+print("🙏🔥🔥SMEX! D3VIL MULTI SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
