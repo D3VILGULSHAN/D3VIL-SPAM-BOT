@@ -16,9 +16,6 @@
 
 ----
 
-## 𝚂𝚃𝙰𝚃𝚄𝚂 𝙾𝙵 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 
-<p align="left"><a href="https://github.com/sameerpanthi/d3VIL-spam-bot/network/members"><img src="https://img.shields.io/github/forks/sameerpanthi/d3VIL-spam-bot?label=Forks&logoColor=Black&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/d3VIL-spam-bot/stargazers"><img src="https://img.shields.io/github/stars/sameerpanthi/d3VIL-spam-bot?logoColor=Blue&style=social"></a><p align="left"><a href="https://github.com/sameerpanthi/d3VIL-spam-bot"></a><p align="left"><a href="https://github.com/sameerpanthi/d3VIL-spam-bot?"><img src="https://img.shields.io/github/last-commit/sameerpanthi/d3VIL-spam-bot?style=plastic"></
-
 -------------------------------------------------
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 
