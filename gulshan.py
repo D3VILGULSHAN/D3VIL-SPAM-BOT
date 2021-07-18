@@ -1539,7 +1539,7 @@ async def help(e):
 text = """
 
 💥💥CONGRATULATIONS UR D3vil SPAM BOT IS READY💥💥💥
-💥💥💥💥💥💥 BY @official_sameer 💥💥💥💥💥💥"""
+💥💥💥💥💥💥 BY @D3VIL_GULSHAN 💥💥💥💥💥💥"""
 
 print(text)
 print("")
