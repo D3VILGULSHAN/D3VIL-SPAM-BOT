@@ -36,7 +36,7 @@
 
 𝚃𝙰𝙺𝙴 𝚂𝚃𝚁𝙸𝙽𝙶 𝙵𝚁𝙾𝙼 𝙷𝙴𝚁𝙴 - 
 
-[![REPL](https://repl.it/badge/github/spandey112/SensibleUserbot)](https://replit.com/@D3VILGULSHAN1/D3VIL-SPAM-BOT#main.py)
+[![REPL](https://repl.it/badge/github/D3KRISH/D3vilUserbot)](https://replit.com/@D3VILGULSHAN1/D3VIL-SPAM-BOT#main.py)
     
 -------------------------------------------------
 
