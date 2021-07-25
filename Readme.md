@@ -42,4 +42,4 @@
 
 ## credits 
 
-[yukki bot](https://github.com/YukkiBot/YukkiMultiSpamBot)
+[d3vil bot](https://github.com/YukkiBot/YukkiMultiSpamBot)
