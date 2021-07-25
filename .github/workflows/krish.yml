@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@DEADLY_SPAMMER"
+          find: "@DEADLY_FIGHTERS"
 
-          replace: "@D3VIL_OFFICIAL"
+          replace: "@D3VIL_GFX_BG"
 
       - name: Create Pull Request
 
