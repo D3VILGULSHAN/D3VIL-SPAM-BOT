@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@DEADLY_SPAM_BOT"
+          find: "yukki"
 
-          replace: "@D3VIL_OP_BOLTE"
+          replace: "d3vil"
 
       - name: Create Pull Request
 
