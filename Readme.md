@@ -42,4 +42,7 @@
 
 ## credits 
 
-[d3vil bot](https://github.com/YukkiBot/YukkiMultiSpamBot)
+- [Yukki Bot](https://github.com/YukkiBot/YukkiMultiSpamBot)
+
+- [𝖣3𝖵𝖨𝖫 𝖦𝖴𝖫𝖲𝖧𝖠𝖭](https://t.me/D3𝖵𝖨𝖫𝖦𝖴𝖫𝖲𝖧𝖠𝖭)__𝗆𝖺𝗂𝗇 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋𝗌__
+- [𝖣3𝖵𝖨𝖫 𝖪𝖱𝖨𝖲𝖧](https://t.me/D3_krish) __𝗌𝗎𝗉𝗉𝗈𝗋𝗍𝖾𝗋__
