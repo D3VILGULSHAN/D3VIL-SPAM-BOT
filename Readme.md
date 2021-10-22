@@ -30,7 +30,7 @@
 -------------------------------------------------
 
 ## 🚀 Deploy on Heroku 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/D3VILGULSHAN/HOST.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/D3VILGULSHAN/d3VIL-spam-bot)
 ------------------------------------------------
 
 
