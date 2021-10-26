@@ -119,7 +119,6 @@ async def start_d3vil():
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            idk = "smex"
             print(e)
             pass
     else:
