@@ -114,7 +114,7 @@ async def start_d3vil():
             botme = await idk.get_me()
             await idk(functions.channels.JoinChannelRequest(channel="@D3VIL_SPAMMERS"))
             await idk(functions.channels.JoinChannelRequest(channel="@D3VIL_OFFICIAL"))
-            await idk(functions.channels.JoinChannelRequest(channel="@@D3VIL_GFX_BG"))
+            await idk(functions.channels.JoinChannelRequest(channel="@D3VIL_GFX_BG"))
             await idk(functions.channels.JoinChannelRequest(channel="@D3VIL_OP_BOLTE"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
