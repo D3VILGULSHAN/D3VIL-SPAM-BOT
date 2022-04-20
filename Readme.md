@@ -23,18 +23,18 @@
                    
 -------------------------------------------------
 
-## DEPLOY ON HEROKU 📍
+## DEPLOY ON HEROKU📍
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/D3VILGULSHAN/d3VIL-spam-bot)
 ------------------------------------------------
 
 
-## STRING FROM HERE 📍
+## STRING FROM HERE📍
 
 [![REPL](https://repl.it/badge/github/D3VILGULSHAN/d3vil-spam-bot)](https://replit.com/@D3VILGULSHAN1/D3VIL-SPAM-BOT#main.py)
     
 -------------------------------------------------
 
-## CREDITS 
+## CREDITS📍
 
 - [𝖣3𝖵𝖨𝖫𝖦𝖴𝖫𝖲𝖧𝖠𝖭](https://t.me/D3𝖵𝖨𝖫𝖦𝖴𝖫𝖲𝖧𝖠𝖭)  __OWNER__
 - [𝖣3𝖵𝖨𝖫 𝖪𝖱𝖨𝖲𝖧](https://t.me/D3_krish) __DEV__
